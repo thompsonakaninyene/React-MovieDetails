@@ -1,0 +1,613 @@
+/*
+   GENERAL STYLES
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+
+/* 
+   HEADER / HERO SECTION
+ */
+
+.head-div {
+    min-height: 700px;
+    width: 100%;
+    background-color: black;
+    background-image: url('../../../public/secret.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 20px 5%; */
+}
+
+
+/* Logo + Navigation */
+
+.logo-scope {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.cine-span{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Navigation */
+.navigate{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 500px;
+    
+}
+
+.Home-div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 0px;
+}
+
+.navigate button {
+   
+    border: none;
+    border-radius: 5px;
+   width: 120px;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.navigate button:hover {
+    border: 2px solid #292933;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--color-accent);
+    color: white;
+    opacity: 0.8;
+}
+
+
+/* Search */
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.doc-icon,
+.img-icon {
+    border-radius: 5px;
+    width: 20px;
+}
+
+
+/*
+   FEATURE SECTION
+*/
+
+.feature-inter {
+    margin-top: 280px;
+    max-width: 650px;
+    margin-left: 50px;
+}
+
+.feature-inter p {
+    color: var(--color-accent);
+    padding: 0;
+    display: block;
+    font-size: 50px;
+}
+.feature-inter h2{
+    font-size: 50px;
+}
+
+.drama {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.two, .sci{
+    color: var(--color-text-secondary);
+}
+.save {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.team-explore {
+    margin-top: 10px;
+    line-height: 1.6;
+    margin-left: 50px;
+    color: var(--color-text-secondary);
+}
+
+
+/* 
+   WATCH BUTTONS
+ */
+
+.watch-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.watch-traller {
+    padding: 15px 20px;
+    width: 170px;
+    color: black;
+    font-weight: bold;
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.watch-list {
+    padding: 15px 20px;
+    width: 140px;
+    color: white;
+    font-weight: bold;
+    background-color: #292933;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.watch-traller:hover,
+.watch-list:hover {
+    opacity: 0.85;
+}
+/* 
+   AUTH BUTTONS
+ */
+
+.auth-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.register-btn,
+.signin-btn {
+    padding: 10px 15px;
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* 
+   POPULAR MOVIES
+ */
+
+.popular-movies {
+     display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 35px;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.popular img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.popular img:hover{
+    transform: scale(1.03);
+}
+.team-explore
+
+
+/* 
+   TOP RATED DIV
+ */
+
+.top-rated-div {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.top-rated-div img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top-rate {
+    margin-top: 2rem;
+}
+
+
+/* 
+   TV SHOW
+ */
+
+.tv-show {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 35px;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.tv-show img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.tv-show img:hover {
+    transform: scale(1.03);
+}
+
+
+/* 
+   TOP RATED
+ */
+.top,.trending-movies,.show,.pop{
+    margin-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: var(--color-accent);
+}
+.top-rated {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 35px;
+    padding: 30px;
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 2px solid var(--color-accent);
+    background-color: var();
+}
+
+.top-rated img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.top-rated img:hover {
+    transform: scale(1.03);
+}
+
+
+/* 
+   TRENDING
+ */
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 35px;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 2px solid var(--color-accent);
+    background-color:var() ;
+}
+.trending p,.top-rated p,.tv-show p,.pop p{
+    color: var(--color-text-primary);
+    font-weight: bold;
+}
+.trending h4,.top-rated h4,.tv-show h4{
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.trending img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.trending img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   TABLET
+   901px and below
+========================= */
+
+@media (max-width: 900px) {
+
+    .head-div {
+        min-height: 650px;
+        padding: 15px 4%;
+    }
+
+    .logo-scope {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .Home-div {
+        gap: 15px;
+    }
+
+    .auth-div {
+        margin-left: auto;
+    }
+
+    .search-icon {
+        margin-left: auto;
+    }
+
+    .feature-inter {
+        margin-top: 250px;
+        max-width: 550px;
+    }
+
+    /* TV Show */
+    .tv-show {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .tv-show img {
+        height: 300px;
+    }
+
+    /* Top Rated */
+    .top-rated {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .top-rated img {
+        height: 300px;
+    }
+
+    /* Trending */
+    .trending {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .trending img {
+        height: 300px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   600px and below
+========================= */
+
+@media (max-width: 600px) {
+
+    .head-div {
+        min-height: 600px;
+        padding: 15px;
+        background-position: center;
+    }
+
+    /* Header */
+
+    .logo-scope {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .header-cine {
+        justify-content: center;
+    }
+
+    .Home-div {
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .Home-div a {
+        font-size: 14px;
+    }
+
+    .search-icon {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .auth-div {
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+
+    /* Feature */
+
+    .feature-inter {
+        margin-top: 180px;
+        max-width: 100%;
+    }
+
+    .feature-inter p {
+        font-size: 14px;
+    }
+
+    .drama {
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .team-explore {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* Buttons */
+
+    .watch-btn {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .watch-traller {
+        width: 150px;
+        padding: 13px 15px;
+    }
+
+    .watch-list {
+        width: 130px;
+        padding: 13px 15px;
+    }
+
+
+    /* TV Show */
+
+    .tv-show {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .tv-show img {
+        height: 260px;
+    }
+
+
+    /* Top Rated */
+
+    .top-rated {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .top-rated img {
+        height: 260px;
+    }
+
+
+    /* Trending */
+
+    .trending {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .trending img {
+        height: 260px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+   400px and below
+========================= */
+
+@media (max-width: 400px) {
+
+    .head-div {
+        min-height: 570px;
+    }
+
+    .Home-div {
+        gap: 8px;
+    }
+
+    .Home-div a {
+        font-size: 12px;
+    }
+
+    .auth-div {
+        gap: 10px;
+    }
+
+    .register-btn,
+    .signin-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .feature-inter {
+        margin-top: 150px;
+    }
+
+    .watch-traller {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .watch-list {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .tv-show,
+    .top-rated,
+    .trending {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .tv-show img,
+    .top-rated img,
+    .trending img {
+        height: 220px;
+    }
+}

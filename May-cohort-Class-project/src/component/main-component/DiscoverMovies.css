@@ -1,0 +1,124 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.cine-scope{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+.wait-div{
+     background-color: white;
+     /* padding: 20px; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* width: 900px;  */
+    background-image: url('../../../public/Black.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.logo-scope{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    
+}
+
+.Home-div{
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+a:hover{
+    border: 2px solid #292933;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--color-accent);
+    color: white;
+}
+.icon{
+   display: flex;
+   width: 20px;
+   gap: 10px;
+   margin-right: 70px;
+}
+.doc-icon,.img-icon{
+    border-radius: 10px;
+}
+.discover-movies h2{
+    margin-top: 30px;
+}
+.discover-movies p{
+    margin-bottom: 30px;
+    color: rgb(205, 205, 127);
+}
+.input-movie{
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+.movies-input{
+    width: 300px; 
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var( --color-surface);
+    color: white;
+}
+.input-movie button{
+    padding: 0px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+     background-color: var( --color-surface);
+    color: var(--color-text-secondary);
+}
+.chip{
+    width: 20px;
+}
+.movie-flier1{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.movie-flier1 div{
+    background-color: var(--color-text-secondary);
+     border-radius: 10px;
+}
+.movie-flier1 img{
+    padding: 10px;
+}
+.movie-flier1 p{
+    color: var(--color-accent);
+    margin-left: 20px;
+    
+}
+.movie-flier1 h4{
+    margin-left: 20px;
+
+}
+.horse{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    color: var(--color-accent);
+}
+.horse:hover{
+    background-color: var(--color-accent);
+    padding: 5px;
+    border-radius: 10px;
+    width: 20px;
+}
+footer span p{
+    color: rgb(232, 232, 140);
+}

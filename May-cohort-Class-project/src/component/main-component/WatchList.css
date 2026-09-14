@@ -1,0 +1,173 @@
+/* *body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* .bam-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.back-div{
+    background-color: white;
+    /* padding: 20px; */
+    margin-bottom: 40px;
+    /* margin: 20px; */
+    /* width: 900px; */
+    background-image: url('../../../public/carryOn.png');
+    background-size: cover;
+    background-position: center;
+}
+.logo-space{
+     /* display: flex; 
+     gap: 20px; 
+     align-items: center;
+    border-bottom: 1px solid white;  */
+    
+}
+.header-dine{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    border-bottom: 2px solid var(--color-accent);
+}
+.logo1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+.mine-span{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   height: 40px;
+   margin-right: 70px;
+}
+.mine-span img{
+    border-radius: 40px;
+}
+.lord{
+    width: 150px;
+    height: 65px;
+}
+.search{
+    width: 30px;
+}
+.discover-movies h2{
+    margin-left: 30px;
+}
+
+
+.discover-movies p{
+    margin-bottom: 30px;
+    color: rgb(205, 205, 127);
+    margin-left: 30px;
+}
+.input-movie{
+    display: flex;
+    gap: 20px;
+}
+.movies-input{
+    width: 300px; 
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var( --color-surface);
+    color: white;
+}
+
+.chip{
+    width: 20px;
+}
+.movie-flier1{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.movie-flier1 div{
+    background-color: var(--color-surface);
+     border-radius: 10px;
+     
+}
+.movie-flier1 img{
+    padding: 10px;
+    
+}
+.movie-flier1 p{
+    color: rgb(197, 197, 105);
+    margin-left: 20px;
+    
+}
+.movie-flier1 h4{
+    margin-left: 20px;
+
+}
+.watch-me {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    color: var( --color-text-primary);
+    background-color: var(--color-surface);
+    border-radius: 5px;
+    padding: 20px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer button{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:  none;
+    background-color: var(--color-accent);
+    margin-top: 15px;
+}
+footer p{
+    color: rgb(197, 197, 105);
+}
+.waiter-span{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.waiter-span button{
+    padding: 7px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+}
+.waiter{
+    display: flex;
+    flex-direction: column;
+}
+/* Clear button*/
+.clear-btn {
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 20px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e53935;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.clear-btn:hover {
+    background-color: #c62828;
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
